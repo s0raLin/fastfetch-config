@@ -23,7 +23,7 @@
 
 ```bash
 mkdir ~/.config/fastfetch
-git clone https://github.com/你的用户名/my-fastfetch-theme.git ~/.config/fastfetch
+git clone https://github.com/s0raLin/fastfetch-config.git ~/.config/fastfetch
 ```
 
 ## 自定义
