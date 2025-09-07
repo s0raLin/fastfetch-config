@@ -1,0 +1,163 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "source": "$HOME/.config/fastfetch/ascii.txt",
+        "padding": {
+            "top": 5,
+            "left": 3
+        }
+    },
+    "display": {
+        "separator": " "
+    },
+    "modules": [
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[90m┌───────────────────────── Hardware ─────────────────────────┐"
+        },
+        {
+            "type": "host",
+            "key": "│  PC     ",
+            "keyColor": "green",
+            "keyWidth": 15
+        },
+        {
+            "type": "cpu",
+            "key": "│ ├ CPU   ",
+            "keyColor": "green",
+            "keyWidth": 15
+        },
+        {
+            "type": "gpu",
+            "key": "│ ├ GPU   ",
+            "keyColor": "green",
+            "keyWidth": 15
+        },
+        {
+            "type": "memory",
+            "key": "│ ├ RAM   ",
+            "keyColor": "green",
+            "keyWidth": 15
+        },
+        {
+            "type": "disk",
+            "key": "│ └ Disk  ",
+            "keyColor": "green",
+            "keyWidth": 15
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[90m└────────────────────────────────────────────────────────────┘"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[90m┌───────────────────────── Software ─────────────────────────┐"
+        },
+        {
+            "type": "os",
+            "key": "│  OS     ",
+            "keyColor": "yellow",
+            "keyWidth": 15
+        },
+        {
+            "type": "kernel",
+            "key": "│ ├ Kernel ",
+            "keyColor": "yellow",
+            "keyWidth": 15
+        },
+        {
+            "type": "bios",
+            "key": "│ ├ BIOS   ",
+            "keyColor": "yellow",
+            "keyWidth": 15
+        },
+        {
+            "type": "packages",
+            "key": "│ ├󰏖 Pkgs   ",
+            "keyColor": "yellow",
+            "keyWidth": 15
+        },
+        {
+            "type": "shell",
+            "key": "│ └ Shell  ",
+            "keyColor": "yellow",
+            "keyWidth": 15
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[90m└────────────────────────────────────────────────────────────┘"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[90m┌───────────────────────── Desktop ──────────────────────────┐"
+        },
+        {
+            "type": "de",
+            "key": "│  DE     ",
+            "keyColor": "blue",
+            "keyWidth": 15
+        },
+        {
+            "type": "lm",
+            "key": "│ ├ LM     ",
+            "keyColor": "blue",
+            "keyWidth": 15
+        },
+        {
+            "type": "wm",
+            "key": "│ ├ WM     ",
+            "keyColor": "blue",
+            "keyWidth": 15
+        },
+        {
+            "type": "wmtheme",
+            "key": "│ ├󰉼 Theme  ",
+            "keyColor": "blue",
+            "keyWidth": 15
+        },
+        {
+            "type": "terminal",
+            "key": "│ └ Term   ",
+            "keyColor": "blue",
+            "keyWidth": 15
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[90m└────────────────────────────────────────────────────────────┘"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[90m┌─────────────── Uptime / Age / DateTime ────────────────────┐"
+        },
+        {
+            "type": "command",
+            "key": "│  OS Age   ",
+            "keyColor": "magenta",
+            "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+        },
+        {
+            "type": "uptime",
+            "key": "│  Uptime   ",
+            "keyColor": "magenta"
+        },
+        {
+            "type": "datetime",
+            "key": "│  DateTime ",
+            "keyColor": "magenta"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[90m└────────────────────────────────────────────────────────────┘"
+        },
+        "break",
+        {
+            "type": "colors",
+            "paddingLeft": 3,
+            "symbol": "circle"
+        }
+    ]
+}
